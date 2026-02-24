@@ -22,7 +22,7 @@ st.markdown(
 st.markdown("<h2 style='text-align:center;color:#A8D5BA;font-family:Arial,sans-serif;'>تقرير بيانات تكاليف الصيانة</h2>", unsafe_allow_html=True)
 
 # --- قراءة البيانات ---
-file_path = r"C:\Users\vooxn\OneDrive\Desktop\Dashboard_Data\تكاليف الصيانة(2).xlsx"
+file_path = "تكاليف الصيانة(2).xlsx"
 df = pd.read_excel(file_path)
 
 # --- تنظيف البيانات ---
@@ -207,4 +207,5 @@ st.markdown(
     """, 
     unsafe_allow_html=True
 )
+
 st.dataframe(df.reset_index(drop=True), width=2200, height=600)
